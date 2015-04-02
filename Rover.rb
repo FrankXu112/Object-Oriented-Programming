@@ -73,9 +73,9 @@ end
 # def make_new_rover
 # 	puts "where do you want your rover to start?"
 # 	puts "Enter a x coordinate:"
-# 	x = gets.to_i
+# 	x = gets.chomp.to_i
 # 	puts "Enter a y coordinate:"
-# 	y = gets.to_i
+# 	y = gets.chomp.to_i
 # 	puts "give a direction:"
 # 	direction = gets.chomp
 # 	rover = Rover.new(x, y, direction)
@@ -91,6 +91,9 @@ end
 
 # 	rover.process_commands(commands)
 # end
+
+# make_new_rover
+# make_new_rover
 
 class Plateau 
 	def initialize(width, height)
@@ -131,14 +134,12 @@ class Plateau
 	end
 end
 
-# make_new_rover
-# make_new_rover
 my_plat = Plateau.new(10,10)
 my_plat.add_rover(1, 2, "N")
-my_plat.add_rover(2, 2, "E")
+my_plat.add_rover(3, 3, "E")
+puts my_plat
+my_plat.command_rover
 puts my_plat
 my_plat.command_rover
 puts my_plat
 
-
-# .process_commands("MLMMMLMRRLRMMMLMR")

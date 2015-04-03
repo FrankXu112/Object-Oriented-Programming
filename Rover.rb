@@ -70,31 +70,6 @@ class Rover
 	end
 end
 
-# def make_new_rover
-# 	puts "where do you want your rover to start?"
-# 	puts "Enter a x coordinate:"
-# 	x = gets.chomp.to_i
-# 	puts "Enter a y coordinate:"
-# 	y = gets.chomp.to_i
-# 	puts "give a direction:"
-# 	direction = gets.chomp
-# 	rover = Rover.new(x, y, direction)
-# 	puts rover
-
-# 	puts "what command do you want to give?"
-# 	puts "--'M' to move forward."
-# 	puts "--'L' to turn left."
-# 	puts "--'R' to turn right."
-#     puts "--example LMRLMRRR"
-
-#     commands = gets.chomp
-
-# 	rover.process_commands(commands)
-# end
-
-# make_new_rover
-# make_new_rover
-
 class Plateau 
 	def initialize(width, height)
 		@width = width
@@ -126,7 +101,6 @@ class Plateau
 
 	    commands = gets.chomp
 	    @rovers[user_input - 1].process_commands(commands)
-
 	end
 
 	def to_s

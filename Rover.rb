@@ -29,9 +29,9 @@ class Rover
 		elsif @direction == "E"
 			@x += 1
 		elsif @direction == "S"
-			"#{@x}, #{@y -= 1}, #{@direction}"
+			@y -= 1
 		elsif @direction == "W"
-			"#{@x -= 1}, #{@y}, #{@direction}"
+			@x -= 1
 		else
 			puts "Error!"
 		end

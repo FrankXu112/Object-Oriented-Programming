@@ -51,7 +51,7 @@ class Receipt
 	def output_result
 		total_sales_tax = 0
 		total_price = 0
-		my_list = @item_list.each do |item|
+		@item_list.each do |item|
 			puts item
 			price = item.price.round(2)
 			sales_tax = item.tax.round(2)
